@@ -8,11 +8,11 @@
             "preLaunchTask": "build debug executable",
             "program": "${workspaceFolder}/zoo_debug",
             "stdio": [
-                "spec-test.txt", // redirect stdin
-                "output.txt", // redirect stdout
+                "sample-d.txt", // redirect stdin
+                "output2.txt", // redirect stdout
                 null // redirect stderr
             ],
-            "args": ["-m", "MST"],
+            "args": ["--mode", "OPTTSP"],
             "stopOnEntry": false,
             "cwd": "${workspaceFolder}",
             "postDebugTask": "clean workspace"
